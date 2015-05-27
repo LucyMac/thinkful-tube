@@ -14,3 +14,12 @@ $(function(){
 		});
 	});
 });
+
+
+//create node, insert jpeg, link it to url
+
+	var node = document.createElement("div");         
+	var thumbnail = document.createTextNode("Buzzy");
+	node.appendChild(thumbnail);
+	document.getElementById("search-results").appendChild(node);
+
