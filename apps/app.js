@@ -9,17 +9,11 @@ $(function(){
 	    	q: searchTerm
 		}, function(data){
         	$.each(data.items, function(index, value){
-				console.log(value);
+				$('search-results').html('<img src=' + items.snippet.thumbnails.medium.url + '/>');
 			});
 		});
 	});
 });
 
 
-//create node, insert jpeg, link it to url
-
-	var node = document.createElement("div");         
-	var thumbnail = document.createTextNode("Buzzy");
-	node.appendChild(thumbnail);
-	document.getElementById("search-results").appendChild(node);
 
