@@ -9,7 +9,7 @@ $(function(){
 	    	q: searchTerm
 		}, function(data){
         	$.each(data.items, function(index, value){
-				$('search-results').html('<img src=' + items.snippet.thumbnails.medium.url + '/>');
+				$('search-results').html('<a href=' + '"https://www.youtube.com/watch?v=' + items.id.videoId + '"><img src=' + items.snippet.thumbnails.medium.url + '/></a>');
 			});
 		});
 	});
